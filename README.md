@@ -18,11 +18,11 @@ This is an API for managing financial transactions between clients, developed wi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Maycon-Rodrigues/simple-bank-api.git
+   git clone https://github.com/your-username/your-repository.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd simple-bank-api
+   cd your-repository
    ```
 3. Install dependencies:
    ```bash
@@ -30,14 +30,18 @@ This is an API for managing financial transactions between clients, developed wi
    ```
 4. Configure environment variables in the `.env` file:
    ```env
-   DATABASE_URL=postgresql://user:password@localhost:5432/payment_db
+   DATABASE_URL=postgresql://docker:docker@localhost:5432/nest
    EXTERNAL_API_URL=https://designer.mocky.io/
    ```
-5. Run Prisma migrations:
+5. Run docker-composer:
+   ```
+   docker compose up -d
+   ```
+6. Run Prisma migrations:
    ```bash
    npx prisma migrate dev
    ```
-6. Start the server:
+7. Start the server:
 
    ```bash
    # development
