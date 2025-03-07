@@ -6,13 +6,14 @@ This is an API for managing financial transactions between clients, developed wi
 
 ## Technologies Used
 
-| Technology                                                                                                        | Description           |
-| ----------------------------------------------------------------------------------------------------------------- | --------------------- |
-| ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)             | Node.js framework     |
-| ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)             | Database management   |
-| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white) | Main database         |
-| ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)                | For external requests |
-| ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white)          | API documentation     |
+| Technology                                                                                                              | Description           |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)                   | Node.js framework     |
+| ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)                   | Database management   |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)       | Main database         |
+| ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)                      | For external requests |
+| ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=white)                | API documentation     |
+| ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white) | Container management  |
 
 ## Installation
 
