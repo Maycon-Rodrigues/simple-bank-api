@@ -31,6 +31,26 @@ export class ClientController {
     return this.clientService.create(createClientDto);
   }
 
+  @Get(':id/sentTransactions')
+  @ApiOperation({ summary: 'Get all sented transactions of a client' })
+  @ApiResponse({
+    status: 200,
+    description: 'Return all sented transactions.',
+  })
+  findSentTransactionByClient(@Param('id') id: string) {
+    return this.clientService.findSentTransactionByClient(id);
+  }
+
+  @Get(':id/receiveTransactions')
+  @ApiOperation({ summary: 'Get all received transactions of a client' })
+  @ApiResponse({
+    status: 200,
+    description: 'Return all received transactions.',
+  })
+  findReceivTransactionByClient(@Param('id') id: string) {
+    return this.clientService.findReceivTransactionByClient(id);
+  }
+
   @Get()
   @ApiOperation({ summary: 'Get all clients' })
   @ApiResponse({

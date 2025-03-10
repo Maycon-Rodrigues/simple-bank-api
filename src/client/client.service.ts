@@ -26,6 +26,60 @@ export class ClientService {
     }
   }
 
+  async findSentTransactionByClient(id: string) {
+    const client = await this.prisma.client.findFirst({
+      where: { id: id },
+      select: {
+        id: true,
+        name: true,
+        type: true,
+        balance: true,
+        sentTransactions: {
+          select: {
+            payee: {
+              select: {
+                id: true,
+                name: true,
+                type: true,
+              },
+            },
+            amount: true,
+            createdAt: true,
+          },
+        },
+      },
+    });
+
+    return client;
+  }
+
+  async findReceivTransactionByClient(id: string) {
+    const client = await this.prisma.client.findFirst({
+      where: { id: id },
+      select: {
+        id: true,
+        name: true,
+        type: true,
+        balance: true,
+        receivedTransactions: {
+          select: {
+            payer: {
+              select: {
+                id: true,
+                name: true,
+                type: true,
+              },
+            },
+            amount: true,
+            createdAt: true,
+          },
+        },
+      },
+    });
+
+    return client;
+  }
+
   async findAll(): Promise<ResponseClientDto[]> {
     const clients = await this.prisma.client.findMany({
       where: { isActive: true },
