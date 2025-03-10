@@ -95,7 +95,7 @@ export class TransactionService {
 
   private async validateExternalService(): Promise<boolean> {
     try {
-      const url = this.configService.get<string>('EXTERNAL_SERVICE_URL');
+      const url = this.configService.get<string>('EXTERNAL_API_URL');
       const response = await lastValueFrom(this.httpService.get(url || ''));
 
       if (response.data.message === 'Authorized') {
